@@ -3,12 +3,16 @@ var myAge = 43;
 //assign value 2 to variable 'years'
 var earlyYears = 2;
 //multiply variable 'earlyYears' by 2
-earlyYears = earlyYears * 25;
+earlyYears *= 25;
 //subtract 2 from varibaly 'age', assign to variable 'laterYears'
 var laterYears = myAge - 2;
+//multiply variable 'laterYears' by 4
+laterYears *= 4;
+
 //console.log test
-console.log(myAge);
-console.log(laterYears);
+//console.log(myAge);
+//console.log(laterYears);
+
 //add variables 'earlyYears' and 'laterYears', assign variable 'myAgeInCatYears'
 var myAgeInCatYears = earlyYears + laterYears;
 //assign name to variable 'name'
