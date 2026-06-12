@@ -50,7 +50,41 @@ house.address = '1800 Central Ave.';
 house['garage size'] = 'one vehicle';
 house['1stOwner'] = 'John Doe';
 house['typeof'] = 'bungalow';
-
 //console.log(house)
+
+//object constructor function
+function Home(rooms, apartment, color, swimmingPool, state, city) {
+    this.rooms = rooms;
+    this.apartment = apartment;
+    this.color = color;
+    this.swimmingPool = swimmingPool;
+    this.state = state;
+    this.city = city
+};
+var home1 = new Home(3, false, 'blue', true, 'Atlanta', 'GA');
+//console.log(home1)
+var home2 = new Home(5, true, 'yellow', false, 'Orlando', 'FL');
+//console.log(home2)
+var home3 = new Home(2, false, 'white', false, 'Denver', 'CO');
+//console.log(home3)
+var home4 = new Home(6, true, 'green', true, 'Los Angeles', 'CA')
+//console.log(home4)
+//create book with object literal notation, convert to constructor, place in library
+function Book(fiction, style, genre, reference, pages) {
+    this.fiction = fiction;
+    this.style = style;
+    this.genre = genre;
+    this.reference = reference;
+    this.pages = pages
+};
+var book1 = new Book(true, 'paperback', 'horror', false, 376);
+var book2 = new Book(false, 'hardcover', 'history', true, 823);
+var book3 = new Book(true, 'paperback', 'mystery', false, 289);
+var book4 = new Book(false, 'hardcover', 'travel', true, 1226);
+var book5 = new Book(true, 'paperback', 'adventure', false, 307);
+console.log(book1, book3)
+
+
+
 
 
