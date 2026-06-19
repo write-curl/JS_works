@@ -13,18 +13,47 @@ function goodEveningNeighbor(firstName, task) {
 function knockKnock() {
     return 'Who\'s there?';
 }
-console.log (knockKnock())
+//console.log (knockKnock())
 //Function expression
 var knockKnock = function() {
     return 'Who\'s there?';
 }
-console.log (knockKnock())
+//console.log (knockKnock())
 //IIFE immediately invoked function expression
 console.log (function(person, dog) {
     return person + ' is taking ' + dog + ' for a walk.';
 }('Steve', 'Basil'));
-//IIFE wrapped in variable
+//IIFE wrapped in a variable
 var whoWalks = (function(person, dog) {
     return person + ' is taking ' + dog + ' for a walk.';
 }('Steve', 'Basil'));
-console.log (whoWalks)
+//console.log (whoWalks)
+//Global and local scope
+function roadTrip() {
+    var gallons = 12;
+    var mpg = 34;
+    return gallons * mpg;
+}
+//console.log (roadTrip())
+//Move variables to local scope
+var gallons = 12;
+var mpg = 34;
+function roadTrip() {
+    return gallons * mpg;
+}
+//console.log (gallons)
+//console.log (mpg)
+//console.log (roadTrip())
+//Nested function, child scope => parent scope => global scope
+//global scope
+var gallons = 408;
+function roadTrip() {
+    //parent scope
+    var miles = 12
+    var mpg = function() {
+        //child scope
+        return gallons / miles;
+    };
+    return mpg();
+}
+console.log (roadTrip())
