@@ -78,7 +78,7 @@ function calculateHealthPlan() {
         return 'You ate the right amount of Food.'
     } else if (actualCalories > idealCalories) {
         return 'Head to the gym fatty!'
-    } else if (actualCalories < idealCalories) {
+    } else {
         return 'Get seconds and pig out!'
     }
 }
