@@ -1,25 +1,25 @@
 //create function to input daily caloric intake and parameter of day.
 //if... else statement version
 function inputCaloriesByDay(day) {
-    if ('Monday') {
+    if (day === 'Monday') {
         return 3500;
-    } else if ('Tuesday') {
+    } else if (day === 'Tuesday') {
         return 2400;
-    } else if ('Wednesday') {
+    } else if (day === 'Wednesday') {
         return 1500;
-    } else if ('Thursday') {
+    } else if (day === 'Thursday') {
         return 1800;
-    } else if ('Friday') {
+    } else if (day === 'Friday') {
         return 2100;
-    } else if ('Saturday') {
+    } else if (day === 'Saturday') {
         return 3000;
-    } else if ('Sunday') {
+    } else if (day === 'Sunday') {
         return 2600;
     } else {
         return 'Please choose valid day'
     }
 }
-console.log (inputCaloriesByDay('Tuesday'))
+console.log (inputCaloriesByDay('Wednesday'))
 
 //create function to input daily caloric intake, switch case
 // function inputCaloriesByDay(day) {
@@ -61,7 +61,7 @@ function getTotalCalories() {
     inputCaloriesByDay('Saturday') + 
     inputCaloriesByDay('Sunday');
 }
-// console.log (getTotalCalories())
+console.log (getTotalCalories())
 
 //create function to show ideal caloric intake
 function getIdealCalories() {
