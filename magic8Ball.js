@@ -64,4 +64,5 @@ if (randomNumber === 0) {
 //         break;
 // }
 
+//console log for variable eightBall response
 console.log ('The Magic 8-ball says: ' + eightBall)
