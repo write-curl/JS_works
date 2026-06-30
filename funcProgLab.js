@@ -76,4 +76,56 @@ var lowerCase = shout.map(function(greet) {
 var shoutHi = shout.shift();
 // console.log (shoutHi);
 
-// array.reduce()
+// higher order function reduce()
+var homeruns = [
+    {batter: 12},
+    {batter: 21},
+    {batter: 28},
+    {batter: 42},
+    {batter: 31},
+    {batter: 22},
+    {batter: 17},
+    {batter: 16},
+    {batter: 5}
+    ];
+// var totalHomers = homeruns.reduce(function(a, b) {
+//     console.log ('accumulative ' , a, 'current ', b);
+//     return a + b.batter;
+// }, 0);
+// console.log (totalHomers)
+
+// create an array of 5 elements
+var miles = [3, 4, 1, 2, 5];
+// using reduce(), find the sum
+miles.reduce(function(x, y) {
+    // console.log (x, y);
+    return x+y;
+});
+// find product when multiplied together
+miles.reduce(function(x, y) {
+    // console.log (x, y);
+    return x*y;
+});
+// find the largest number
+var dist = miles.reduce(function(acc, curr) {
+    if (acc>curr) {
+        return acc;
+    } else {
+        return curr;
+    }
+});
+// console.log (dist);
+
+// map and reduce methods on an array, use chain method
+var runsScored = [6, 3, 1, 4, 0, 5, 2];
+var double = runsScored.map(function(hits) {
+    return hits * 2;
+})  .reduce(function(x, y) {
+    return x+y;
+}, 0);
+console.log (double);
+
+
+
+
+
